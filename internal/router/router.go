@@ -16,7 +16,7 @@ func Setup(r *gin.Engine, db *gorm.DB, cfg *config.Config) {
 	r.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"status":  "healthy",
-			"db":      "connected", // có thể check db.Ping() nếu muốn
+			"db":      db.Ping(),
 			"message": "Gin + GORM + MySQL is up!",
 		})
 	})
