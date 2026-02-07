@@ -1,0 +1,11 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  bin = "tmp/main"                  # binary output
+  cmd = "go build -o tmp/main ./cmd/api"  # chỉ định folder chứa main.go
+  delay = 1000                      # ms chờ trước build
+  include_ext = ["go"]              # chỉ watch file .go
+  exclude_dir = ["tmp", "vendor", "migrations", "docs"]  # bỏ qua folder nặng
+  include_dir = ["cmd", "internal", "pkg"]  # Thêm để Air watch thay đổi trong subfolders
+  kill_delay = "3s"                 # graceful shutdown trước restart

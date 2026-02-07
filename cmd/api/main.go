@@ -7,6 +7,8 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+	"net/http"
+	"context"
 
 	"quickstart/internal/config"
 	"quickstart/internal/mysql"
