@@ -8,9 +8,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/thienbd203/gin-quickstart/internal/config"
-	"github.com/thienbd203/gin-quickstart/internal/mysql"
-	"github.com/thienbd203/gin-quickstart/internal/router"
+	"quickstart/internal/config"
+	"quickstart/internal/mysql"
+	"quickstart/internal/router"
 
 	"github.com/gin-gonic/gin"
 	"github.com/rs/zerolog"

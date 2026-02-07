@@ -2,7 +2,7 @@ package mysql
 
 import (
 	"fmt"
-	"github.com/thienbd203/gin-quickstart/internal/config"
+	"quickstart/internal/config"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
