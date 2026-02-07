@@ -46,7 +46,7 @@ func main() {
 	r.Use(gin.Recovery())
 
 	// Register routes
-	router.Setup(r, db)
+	router.Setup(r, db, cfg)
 
 	// Run server
 	srv := &http.Server{
